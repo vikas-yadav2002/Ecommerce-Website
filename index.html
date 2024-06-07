@@ -268,6 +268,40 @@
             </div>
         </div>
         <!--====================  End of category slider  ====================-->
+
+        <!-- 
+            pop up for add to cart
+         -->
+         <div id="cart-popup" class="cart-popup">
+            <div class="cart-popup-content">
+                <span class="close">&times;</span>
+                <h3 class="product-title">Product Title</h3>
+                <p class="product-price">$120</p>
+                <div class="product-options">
+                    <div>
+                        <input type="checkbox" id="gift-wrap" name="gift-wrap">
+                        <label for="gift-wrap">Gift Wrap</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="size-large" name="size" value="large">
+                        <label for="size-large">Size Large</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="size-medium" name="size" value="medium">
+                        <label for="size-medium">Size Medium</label>
+                    </div>
+                </div>
+                <div class="counter-add-button">
+                <div class="cart-product__counter">
+                    <div class="cart-plus-minus">
+                        <input class="cart-plus-minus-box" type="text" name="qtybutton" disabled value="1">
+                    </div>
+                </div>
+                <button class="add-item popupbutton"><a href="index.html">Add Item</a></button>
+            </div>
+            </div>
+        </div>
+        
        
         <!--====================  products area ====================-->
         <div class="products-area">
@@ -526,5 +560,8 @@
 -->
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <!-- load post -->
     <script src="./assets/js/onclickload.js"></script>
+    <!-- pop up -->
+    <script src="./assets/js/CartpopUp.js"></script>
 </html>

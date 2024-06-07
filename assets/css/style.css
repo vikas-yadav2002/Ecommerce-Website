@@ -4115,9 +4115,15 @@ footer{
   position: relative;
   display: inline-block;
   width: 90px;
-  height: 30px;
+  height: 22px;
   padding: 0;
 }
+.popupbutton{
+  width: 30%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
 .cart-plus-minus .qtybutton {
   font-size: 16px;
   line-height: 30px;
@@ -4622,4 +4628,126 @@ footer{
   .grid-product__content .price {
       font-size: 12px;
   }
+}
+/* Cart popup */
+
+
+.counter-add-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px
+  
+}
+.cart-popup {
+ 
+
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: #EEEEFF;
+  display: none;
+  position: fixed;
+  bottom: -100%;
+  left: 25%;
+  width: 50%;
+  background-color: #EEEEFF;
+  border-top: 2px solid #eeeeff;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  transition: bottom 0.3s ease-in-out;
+  z-index: 1000;
+  margin: 0px auto;
+}
+
+.cart-popup-content {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.cart-popup-content .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart-popup-content .product-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cart-popup-content .product-price {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cart-popup-content .product-options {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.cart-popup-content .product-options div {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.quantity-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 20px;
+  border: 1px solid #ccc;
+  background: none;
+  cursor: pointer;
+}
+
+.quantity-control .quantity {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.add-item {
+  padding: 10px 20px;
+  background-color: #7415cb;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .cart-popup {
+    left: 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-popup {
+    left: 5%;
+    width: 90%;
+  }
+  .popupbutton{
+    padding: 0px;
+    height: 35px;
+}
+  
+}
+
+/* cart */
+.cartbyme{
+  margin-top: 30px;
 }
