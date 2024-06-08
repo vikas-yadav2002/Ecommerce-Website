@@ -3566,7 +3566,7 @@ footer{
   background-color: #7415CB;
 }
 .profile-header-area{
-  padding-top: 70px;
+  padding-top: 80px;
 }
 /* profile body */
 .profile-info-table {
@@ -4487,11 +4487,12 @@ footer{
 /*=====  End of checkout  ======*/
 
 /* adresss dropdown */
+/* address dropdown */
 .address-dropdown {
   position: relative;
   display: inline-block;
-  width: 100%; }
-  
+  width: 100%;
+}
 
 .current-address {
   padding: 10px 15px;
@@ -4523,12 +4524,12 @@ footer{
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 }
 
-.address-dropdown:hover .address-options {
+.address-options.show {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
   margin: 0 20px;
-    width: 40%;
+  width: 40%;
 }
 
 .address-option {
@@ -4543,15 +4544,25 @@ footer{
   text-align: right;
 }
 
+.fa-chevron-icon {
+  transition: transform 0.3s ease;
+  margin-left: 5px; /* Adjust the spacing to keep it in place */
+}
 
-/* address rsponsive */
+.fa-chevron-icon.open {
+  transform: rotate(180deg);
+  margin-left: 5px; /* Ensure the spacing remains consistent */
+}
+
+
+/* address responsive*/
 @media (max-width: 768px) {
   .address-options {
       width: 80%;
       transform: translateY(5px);
   }
 
-  .address-dropdown:hover .address-options {
+  .address-options.show {
       margin: 0 10px;
       width: 80%;
   }
@@ -4576,7 +4587,7 @@ footer{
       transform: translateY(2px);
   }
 
-  .address-dropdown:hover .address-options {
+  .address-options.show {
       margin: 0;
       width: 100%;
   }
@@ -4589,7 +4600,6 @@ footer{
       text-align: center;
   }
 }
-
 
 
 /* buy button Responsive adjustments */
@@ -4759,3 +4769,19 @@ footer{
 #see-more-button{
   background-color: black;
 }
+
+
+/* drop down  */
+/* ... (existing styles) ... */
+
+.fa-chevron-icon {
+  transition: transform 0.3s ease;
+  margin-left: 5px; /* Adjust the spacing to keep it in place */
+}
+
+.fa-chevron-icon.open {
+  transform: rotate(180deg);
+  margin-left: 5px; /* Ensure the spacing remains consistent */
+}
+
+

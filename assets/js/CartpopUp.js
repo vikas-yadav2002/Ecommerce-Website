@@ -37,3 +37,6 @@ document.querySelector('.add-item').addEventListener('click', function() {
         cartPopup.style.display = 'none';
     }, 300);
 });
+
+
+
