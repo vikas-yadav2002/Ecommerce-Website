@@ -4784,4 +4784,9 @@ footer{
   margin-left: 5px; /* Ensure the spacing remains consistent */
 }
 
-
+/* not accepting orders */
+.fa-solid, .fas {
+  font-weight: 900;
+  margin: 31px;
+  font-size: 4rem;
+}
