@@ -2839,6 +2839,9 @@ footer{
 /*=============================================
 =            hero slider            =
 =============================================*/
+.hero-slider{
+  margin-top: 10vh;
+}
 .hero-slider-wrapper .slick-active .hero-slider-content > *:nth-child(1) {
   -webkit-animation-name: fadeInTop;
           animation-name: fadeInTop;
@@ -4492,6 +4495,7 @@ footer{
   position: relative;
   display: inline-block;
   width: 100%;
+
 }
 
 .current-address {
