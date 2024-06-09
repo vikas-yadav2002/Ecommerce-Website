@@ -2840,7 +2840,7 @@ footer{
 =            hero slider            =
 =============================================*/
 .hero-slider{
-  margin-top: 10vh;
+  margin-top: 8vh;
 }
 .hero-slider-wrapper .slick-active .hero-slider-content > *:nth-child(1) {
   -webkit-animation-name: fadeInTop;
@@ -4771,7 +4771,7 @@ footer{
 }
 
 #see-more-button{
-  background-color: black;
+  background-color: #9C5DED;
 }
 
 
@@ -4793,4 +4793,12 @@ footer{
   font-weight: 900;
   margin: 31px;
   font-size: 4rem;
+}
+
+/* adjustment of view */
+
+@media screen and (min-device-width: 395px) and (max-device-width: 768px) { 
+  .hero-slider {
+    margin-top: 6vh;
+}
 }
