@@ -130,11 +130,8 @@
                 <ul class="offcanvas-navigation">
                     <li><span class="icon"><img src="assets/img/icons/profile.svg" class="injectable" alt=""></span><a href="login.html">Login / Sign up</a></li>
                     <li><span class="icon"><img src="assets/img/icons/profile-two.svg" class="injectable" alt=""></span><a href="profile.html">My Profile</a></li>
-                    <li><span class="icon"><img src="assets/img/icons/notification.svg" class="injectable" alt=""></span><a href="notification.html">Notification</a></li>
-                    <li><span class="icon"><img src="assets/img/icons/product.svg" class="injectable" alt=""></span><a href="shop.html">All products</a></li>
                     <li><span class="icon"><img src="assets/img/icons/cart-two.svg" class="injectable" alt=""></span><a href="order.html">My Order</a></li>
                     <li><span class="icon"><img src="assets/img/icons/cart-three.svg" class="injectable" alt=""></span><a href="cart.html">Cart</a></li>
-                    <li><span class="icon"><img src="assets/img/icons/wishlist.svg" class="injectable" alt=""></span><a href="wishlist.html">Wishlist</a></li>
                     <li><span class="icon"><img src="assets/img/icons/gear-two.svg" class="injectable" alt=""></span><a href="edit-profile.html">Settings</a></li>
                     <li><span class="icon"><img src="assets/img/icons/profile.svg" class="injectable" alt=""></span><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -204,7 +201,7 @@
                             <div class="category-item">
                                 <div class="category-item__image">
                                     <a href="shop.html">
-                                        <img src="assets/img/icons/category/cat1.svg" class="injectable" alt="">
+                                        <img src="./assets/img/cat3.svg" class="injectable" alt="">
                                     </a>
                                 </div>
                                 <div class="category-item__title">
@@ -300,6 +297,38 @@
             </div>
             </div>
         </div>
+        <!-- buy pop up -->
+      
+        <div id="buy-popup" class="buy-popup">
+            <div class="buy-popup-content">
+                <span class="close">&times;</span>
+                <h3 class="product-title">Product Title</h3>
+                <p class="product-price">$120</p>
+                <div class="product-options">
+                    <div>
+                        <input type="checkbox" id="gift-wrap-buy" name="gift-wrap">
+                        <label for="gift-wrap-buy">Gift Wrap</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="size-large-buy" name="size" value="large">
+                        <label for="size-large-buy">Size Large</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="size-medium-buy" name="size" value="medium">
+                        <label for="size-medium-buy">Size Medium</label>
+                    </div>
+                </div>
+                <div class="counter-add-button">
+                    <div class="buy-product__counter">
+                        <div class="cart-plus-minus">
+                            <input class="cart-plus-minus-box" type="text" name="qtybutton" disabled value="1">
+                        </div>
+                    </div>
+                    <button class="buy-item popupbutton"><a href="index.html">Buy Item</a></button>
+                </div>
+            </div>
+        </div>
+        
         
        
         <!--====================  products area ====================-->
@@ -569,4 +598,6 @@
     <script src="./assets/js/CartpopUp.js"></script>
     <!-- dropdown -->
    <script src="./assets/js/dropdown.js"></script>
+   <!-- but now popup -->
+   <script src="./assets/js/buypopup.js"></script>
 </html>
