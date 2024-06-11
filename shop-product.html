@@ -72,7 +72,7 @@
             </div>
             <div class="address-dropdown">
                 <div class="current-address" id="currentAddress">
-                    <span class="address-label">Delivery Address:</span>
+                    <span class="address-label">Pickup Address:</span>
                     <div class="address-text">
                         123 Main Street, Anytown USA 12345
                         <i class="fa fa-chevron-down fa-chevron-icon"></i>
@@ -91,29 +91,76 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="new-address-button">
-                        <button class="btn btn-secondary">
-                            <i class="fa fa-plus"></i> Add New Address
-                        </button>
-                    </div>
+                     
                 </div>
             </div>
             <!-- search keywords -->
-            <div class="search-keyword-area space-xy--15 bg-color--grey2" id="search-keyword-box">
-                <div class="search-keyword-header space-mb--20">
-                    <h4 class="search-keyword-header__title">Hot Keywords</h4>
-                </div>
-                <ul class="search-keywords">
-                    <li><a href="search.html">Shoes</a></li>
-                    <li><a href="search.html">Fashion Bag</a></li>
-                    <li><a href="search.html">Light Bag</a></li>
-                    <li><a href="search.html">Parts</a></li>
-                    <li><a href="search.html">Sport Shoes</a></li>
-                    <li><a href="search.html">Travel Bag</a></li>
-                </ul>
-            </div>
+            
         </header>
         <!--====================  End of header area  ====================-->
+         <!-- 
+            pop up for add to cart
+         -->
+         <div id="cart-popup" class="cart-popup">
+            <div class="cart-popup-content">
+                <span class="close">&times;</span>
+                <h3 class="product-title">Product Title</h3>
+                <p class="product-price">$120</p>
+                <div class="product-options">
+                    <div>
+                        <input type="checkbox" id="gift-wrap" name="gift-wrap">
+                        <label for="gift-wrap">Gift Wrap</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="size-large" name="size" value="large">
+                        <label for="size-large">Size Large</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="size-medium" name="size" value="medium">
+                        <label for="size-medium">Size Medium</label>
+                    </div>
+                </div>
+                <div class="counter-add-button">
+                <div class="cart-product__counter">
+                    <div class="cart-plus-minus">
+                        <input class="cart-plus-minus-box" type="text" name="qtybutton" disabled value="1">
+                    </div>
+                </div>
+                <button class="add-item popupbutton"><a href="index.html">Add Item</a></button>
+            </div>
+            </div>
+        </div>
+        <!-- buy pop up -->
+      
+        <div id="buy-popup" class="buy-popup">
+            <div class="buy-popup-content">
+                <span class="close">&times;</span>
+                <h3 class="product-title">Product Title</h3>
+                <p class="product-price">$120</p>
+                <div class="product-options">
+                    <div>
+                        <input type="checkbox" id="gift-wrap-buy" name="gift-wrap">
+                        <label for="gift-wrap-buy">Gift Wrap</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="size-large-buy" name="size" value="large">
+                        <label for="size-large-buy">Size Large</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="size-medium-buy" name="size" value="medium">
+                        <label for="size-medium-buy">Size Medium</label>
+                    </div>
+                </div>
+                <div class="counter-add-button">
+                    <div class="buy-product__counter">
+                        <div class="cart-plus-minus">
+                            <input class="cart-plus-minus-box" type="text" name="qtybutton" disabled value="1">
+                        </div>
+                    </div>
+                    <button class="buy-item popupbutton"><a href="index.html">Buy Item</a></button>
+                </div>
+            </div>
+        </div>
         <!--====================  mobile menu overlay ====================-->
         <div class="offcanvas-menu" id="offcanvas-menu">
             <div class="profile-card text-center">
@@ -140,7 +187,11 @@
         </div>
         <!--====================  End of mobile menu overlay  ====================-->
         <!--====================  product image slider ====================-->
+        <div class="col-3">
+            <a href="index.html" class="back-link"> <i class="fa fa-angle-left"></i> Back</a>
+        </div>
         <div class="product-image-slider-wrapper space-pb--30 space-mb--30">
+            
             <div class="product-image-single">
                 <img src="assets/img/product-slider/product1.png" class="img-fluid" alt="">
             </div>
@@ -151,6 +202,7 @@
                 <img src="assets/img/product-slider/product3.png" class="img-fluid" alt="">
             </div>
         </div>
+
         <!--====================  End of product image slider  ====================-->
         <!--====================  product content ====================-->
         <!-- product content header -->
@@ -163,7 +215,7 @@
                                 <h3 class="title">Lather Demo Bag Name</h3>
                                 <div class="price">
                                     <span class="main-price">$460</span>
-                                    <span class="discounted-price">$320</span>
+                                    <!-- <span class="discounted-price">$320</span> -->
                                 </div>
                                 <div class="rating">
                                     <ul class="rating__stars">
@@ -301,5 +353,7 @@
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
     <script src="./assets/js/dropdown.js"></script>
+    <script src="./assets/js/CartpopUp.js"></script>
+    <script src="./assets/js/buypopup.js"></script>
 </body>
 </html>
