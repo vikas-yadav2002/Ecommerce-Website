@@ -2533,7 +2533,7 @@ header .header-menu-trigger:focus {
 
 .offcanvas-navigation {
   overflow-y: scroll;
-  height: 400px;
+  height: 325px;
   margin: -40px -40px;
   padding: 0 40px;
 }
@@ -3186,7 +3186,7 @@ footer{
 
 .product-image-slider-wrapper {
   position: relative;
-  /* padding-top: 6vh; */
+  padding-top: 6vh;
 }
 .product-image-slider-wrapper .product-image-single img {
   margin: 0 auto;
@@ -4988,4 +4988,48 @@ footer{
     padding: 0px;
     height: 35px;
   }
+}
+
+/* profile-body-area */
+.profile-body-area{
+  margin-top: 10vh;
+}
+
+
+/* logout */
+.logout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.logout button{
+  width: 60%;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.logout button:hover{
+  scale: 1.1;
+}
+
+.new-back{
+  position: absolute;
+  z-index: 1;
+  top: 125px;
+  left: 10px;
+}
+/* new order list */
+.newmyclass{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-4{
+  margin: 20px;
 }
