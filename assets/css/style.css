@@ -5033,3 +5033,25 @@ footer{
 .p-4{
   margin: 20px;
 }
+
+
+/* not found msg */
+.msg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+padding-left: 10px;
+
+}
+
+.msg img{
+  height: 20vh;
+}
+
+.msg span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
