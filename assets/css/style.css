@@ -2912,7 +2912,7 @@ footer{
 }
 
 .hero-slider-content {
-  width: 300px;
+  width: 3415px;
   max-width: 100%;
 }
 .hero-slider-content > * {
@@ -4393,7 +4393,7 @@ footer{
   color: #ffffff;
   border: none;
   background: none;
-  background-color: #00c569;
+  background-color: #7415CB;
 }
 
 .your-order-area h3 {
@@ -4482,7 +4482,7 @@ footer{
   font-size: 16px;
   font-weight: 500;
   list-style: outside none none;
-  color: #00c569;
+  color: #7415CB;
 }
 .your-order-area .place-order > a {
   font-weight: 500;
@@ -4586,7 +4586,8 @@ footer{
 
 .fa-chevron-icon.open {
   transform: rotate(180deg);
-  margin-left: 5px; /* Ensure the spacing remains consistent */
+  margin-left: 5px;
+  width: 1vw;
 }
 
 
@@ -4633,6 +4634,11 @@ footer{
 
   .new-address-button {
       text-align: center;
+  }
+  .fa-chevron-icon.open {
+    transform: rotate(180deg);
+    margin-left: 5px;
+    width: 3vw;
   }
 }
 
@@ -4988,6 +4994,10 @@ footer{
     padding: 0px;
     height: 35px;
   }
+  /* checklist */
+  .newClass {
+    margin-top: 4vh;
+  }
 }
 
 /* profile-body-area */
@@ -5054,4 +5064,9 @@ padding-left: 10px;
   align-items: center;
   justify-content: center;
   font-weight: 800;
+}
+
+/* checkout  */
+.newClass {
+  margin-top: 5vh;
 }

@@ -26,7 +26,7 @@ document.getElementById('see-more-button').addEventListener('click', function() 
                                             <span class="category">Shoe</span>
                                             <div class="price">
                                                 <span class="main-price">$150</span>
-                                                <span class="discounted-price">$120</span>
+                                               
                                             </div>
                                         </div>
                                         <div class="shop-product-button">
@@ -48,7 +48,7 @@ document.getElementById('see-more-button').addEventListener('click', function() 
                                         <span class="category">Shoe</span>
                                         <div class="price">
                                             <span class="main-price">$150</span>
-                                            <span class="discounted-price">$120</span>
+                                            
                                         </div>
                                     </div>
                                     <div class="shop-product-button">
