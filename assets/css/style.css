@@ -4345,7 +4345,7 @@ footer{
 }
 .checkout-form__single-field input:focus,
 .checkout-form__single-field textarea:focus {
-  border-bottom: 2px solid #00c569;
+  border-bottom: 2px solid #7415CB;
 }
 .checkout-form__single-field ::-webkit-input-placeholder {
   /* Firefox */
@@ -5002,7 +5002,7 @@ footer{
 
 /* profile-body-area */
 .profile-body-area{
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 
@@ -5069,4 +5069,20 @@ padding-left: 10px;
 /* checkout  */
 .newClass {
   margin-top: 5vh;
+}
+
+
+/* profile-photo */
+.profile-photo{
+  margin-top: 10vh;
+}
+.Photo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-image{
+  width: 25vh;
+  height: 25vh;
+  border-radius: 50%;
 }

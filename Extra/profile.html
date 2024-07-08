@@ -22,12 +22,11 @@
     <link rel="stylesheet" href="../assets/css/plugins/ion.rangeSlider.min.css">
     <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from above) -->
     <!--
-			<link rel="stylesheet" href="assets/css/vendor.min.css">
-			<link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+			<link rel="stylesheet" href="../assets/css/vendor.min.css">
+			<link rel="stylesheet" href="../assets/css/plugins/plugins.min.css">
 			-->
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="./extra.css">
 </head>
 <body>
     <!--====================  preloader area ====================-->
@@ -39,7 +38,7 @@
         </div>
     </div>
     <!--====================  End of preloader area  ====================-->
-    <div class="body-wrapper space-pt--70 space-pb--120">
+    <div class="body-wrapper bg-color--gradient space-pt--70 space-pb--120">
         <!--====================  header area ====================-->
         <header>
             <div class="header-wrapper border-bottom">
@@ -71,7 +70,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="address-dropdown">
+            <div class="address-dropdown">
                 <div class="current-address" id="currentAddress">
                     <span class="address-label">Pickup Address:</span>
                     <div class="address-text">
@@ -94,14 +93,11 @@
                     </ul>
                      
                 </div>
-            </div> -->
+            </div>
             <!-- search keywords -->
             
         </header>
         <!--====================  End of header area  ====================-->
-        
-      
-       
         <!--====================  mobile menu overlay ====================-->
         <div class="offcanvas-menu" id="offcanvas-menu">
             <div class="profile-card text-center">
@@ -130,85 +126,52 @@
             </div>
         </div>
         <!--====================  End of mobile menu overlay  ====================-->
-        <!--====================  product image slider ====================-->
-        <div class="col-3">
-            <a href="index.html" class="back-link new-back"> <i class="fa fa-angle-left"></i> Back</a>
-        </div>
-        <div class="product-image-slider-wrapper space-pb--30 space-mb--30">
-            
-            <div class="product-image-single">
-                <img src="../assets/img/product-slider/product1.png" class="img-fluid" alt="">
-            </div>
-            <div class="product-image-single">
-                <img src="../assets/img/product-slider/product2.png" class="img-fluid" alt="">
-            </div>
-            <div class="product-image-single">
-                <img src="../assets/img/product-slider/product3.png" class="img-fluid" alt="">
+        <!--====================  profile header ====================-->
+       <div class="profile-photo">
+        <div class="Photo-container">
+            <div class="image">
+                <img src="../assets/img/profile.jpg" class="img-fluid profile-image" alt="">
             </div>
         </div>
-
-        <!--====================  End of product image slider  ====================-->
-        <!--====================  product content ====================-->
-        <!-- product content header -->
-        <div class="product-content-header-area border-bottom--thick space-pb--30">
+       </div>
+        <!--====================  End of profile header  ====================-->
+        <!--====================  profile body ====================-->
+        <div class="profile-body-area">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="product-content-header">
-                            <div class="product-content-header__main-info">
-                                <h3 class="title">Lather Demo Bag Name</h3>
-                                <div class="price">
-                                    <span class="main-price">$460</span>
-                                    <!-- <span class="discounted-price">$320</span> -->
+                        <div class="profile-body">
+                            <div class="profile-info-table space-mb--40">
+                                <div class="profile-info-block">
+                                    <div class="profile-info-block__title">Full Name</div>
+                                    <div class="profile-info-block__value">Don Normane</div>
                                 </div>
-                                <!-- <div class="rating">
-                                    <ul class="rating__stars">
-                                        <li><img src="assets/img/icons/star.svg" class="injectable" alt=""></li>
-                                        <li><img src="assets/img/icons/star.svg" class="injectable" alt=""></li>
-                                        <li><img src="assets/img/icons/star.svg" class="injectable" alt=""></li>
-                                        <li><img src="assets/img/icons/star.svg" class="injectable" alt=""></li>
-                                        <li><img src="assets/img/icons/star.svg" class="injectable" alt=""></li>
-                                    </ul>
-                                    <span class="rating__text">6</span>
-                                </div> -->
+                                
+                                <div class="profile-info-block">
+                                    <div class="profile-info-block__title">Phone</div>
+                                    <div class="profile-info-block__value">(+1) 223556 66</div>
+                                </div>
+                                <div class="profile-info-block">
+                                    <div class="profile-info-block__title">E-mail Address</div>
+                                    <div class="profile-info-block__value">demo@mail.com</div>
+                                </div>
+                                <div class="profile-info-block">
+                                    <div class="profile-info-block__title">Address</div>
+                                    <div class="profile-info-block__value">Address 1</div>
+                                </div>
+                                
+                                <div class="profile-info-block">
+                                    <div class="profile-info-block__title">Edit Profile</div>
+                                    <div class="profile-info-block__value"><a href="edit-profile.html"><img src="../assets/img/icons/edit.svg" class="injectable" alt=""></a></div>
+                                </div>
                             </div>
-                           
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-      
-        <div class="product-content-safety border-bottom--thick space-pt--15 space-pb--15">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h4><img src="../assets/img/icons/security.svg" class="injectable" alt=""> Secure Payment Method.</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-        <!-- product content description -->
-        <div class="product-content-description space-pt--25 space-pb--25">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h4 class="space-mb--5">Specification</h4>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium, totam
-                            rem aperiam, eaque ipsa quae ab illo inventore veritatis
-                            et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- shop product button -->
-        <div class="shop-product-button">
-            <button class="cart">ADD TO CART</button>
-            <button class="buy">BUY NOW</button>
-        </div>
-        <!--====================  End of product content  ====================-->
+        <!--====================  End of profile body  ====================-->
         <!--====================  footer area ====================-->
         <footer>
             <div class="footer-nav-wrapper">
@@ -218,7 +181,7 @@
                         <span>Home</span>
                     </div>
                 </a>
-                
+               
                 <a href="cart.html" class="footer-nav-single">
                     <div class="menu-wrapper">
                         <img src="../assets/img/icons/cart.svg" class="injectable" alt="">
@@ -251,17 +214,10 @@
     <script src="../assets/js/plugins/slick.min.js"></script>
     <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from above) -->
     <!--
-  <script src="assets/js/plugins/plugins.min.js"></script>
+  <script src="../assets/js/plugins/plugins.min.js"></script>
 -->
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
-    <!-- load post -->
-    <script src="../assets/js/onclickload.js"></script>
-    <!-- pop up -->
-    <!-- <script src="../assets/js/CartpopUp.js"></script> -->
-    <!-- dropdown -->
-   <script src="../assets/js/dropdown.js"></script>
-   <!-- but now popup -->
-   <!-- <script src="../assets/js/buypopup.js"></script> -->
+    <script src="./../assets/js/dropdown.js"></script>
 </body>
 </html>

@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="../assets/css/plugins/ion.rangeSlider.min.css">
     <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from above) -->
     <!--
-			<link rel="stylesheet" href="assets/css/vendor.min.css">
-			<link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+			<link rel="stylesheet" href="../assets/css/vendor.min.css">
+			<link rel="stylesheet" href="../assets/css/plugins/plugins.min.css">
 			-->
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -39,7 +39,7 @@
         </div>
     </div>
     <!--====================  End of preloader area  ====================-->
-    <div class="body-wrapper space-pt--70 space-pb--120">
+    <div class="body-wrapper bg-color--gradient space-pt--70 space-pb--120">
         <!--====================  header area ====================-->
         <header>
             <div class="header-wrapper border-bottom">
@@ -48,7 +48,7 @@
                         <div class="col-auto">
                             <!-- header logo -->
                             <div class="header-logo">
-                                <a href="index.html">
+                                <a href="index2.html">
                                     <img src="../assets/img/logo.png" class="img-fluid" alt="">
                                 </a>
                             </div>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="address-dropdown">
+            <div class="address-dropdown">
                 <div class="current-address" id="currentAddress">
                     <span class="address-label">Pickup Address:</span>
                     <div class="address-text">
@@ -94,14 +94,11 @@
                     </ul>
                      
                 </div>
-            </div> -->
+            </div>
             <!-- search keywords -->
             
         </header>
         <!--====================  End of header area  ====================-->
-        
-      
-       
         <!--====================  mobile menu overlay ====================-->
         <div class="offcanvas-menu" id="offcanvas-menu">
             <div class="profile-card text-center">
@@ -130,85 +127,89 @@
             </div>
         </div>
         <!--====================  End of mobile menu overlay  ====================-->
-        <!--====================  product image slider ====================-->
-        <div class="col-3">
-            <a href="index.html" class="back-link new-back"> <i class="fa fa-angle-left"></i> Back</a>
-        </div>
-        <div class="product-image-slider-wrapper space-pb--30 space-mb--30">
-            
-            <div class="product-image-single">
-                <img src="../assets/img/product-slider/product1.png" class="img-fluid" alt="">
-            </div>
-            <div class="product-image-single">
-                <img src="../assets/img/product-slider/product2.png" class="img-fluid" alt="">
-            </div>
-            <div class="product-image-single">
-                <img src="../assets/img/product-slider/product3.png" class="img-fluid" alt="">
+        <!--====================  breadcrumb area ====================-->
+        <div class="breadcrumb-area newClass bg-color--grey space-y--15">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <a href="index.html" class="back-link"> <i class="fa fa-angle-left"></i> Back</a>
+                    </div>
+                    <div class="col-6">
+                        <h1 class="page-title text-center">Checkout</h1>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <!--====================  End of product image slider  ====================-->
-        <!--====================  product content ====================-->
-        <!-- product content header -->
-        <div class="product-content-header-area border-bottom--thick space-pb--30">
+        <!--====================  End of breadcrumb area  ====================-->
+        <!--====================  checkout body ====================-->
+        <div class="checkout-body space-mt--30">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="product-content-header">
-                            <div class="product-content-header__main-info">
-                                <h3 class="title">Lather Demo Bag Name</h3>
-                                <div class="price">
-                                    <span class="main-price">$460</span>
-                                    <!-- <span class="discounted-price">$320</span> -->
+                        <!-- checkout form -->
+                        <div class="checkout-form">
+                            <form>
+                                <div class="checkout-form__single-field space-mb--30">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" name="fullName" id="fullName" placeholder="Enter Full Name">
                                 </div>
-                                <!-- <div class="rating">
-                                    <ul class="rating__stars">
-                                        <li><img src="assets/img/icons/star.svg" class="injectable" alt=""></li>
-                                        <li><img src="assets/img/icons/star.svg" class="injectable" alt=""></li>
-                                        <li><img src="assets/img/icons/star.svg" class="injectable" alt=""></li>
-                                        <li><img src="assets/img/icons/star.svg" class="injectable" alt=""></li>
-                                        <li><img src="assets/img/icons/star.svg" class="injectable" alt=""></li>
-                                    </ul>
-                                    <span class="rating__text">6</span>
-                                </div> -->
-                            </div>
-                           
+                                
+                                <div class="checkout-form__single-field space-mb--30">
+                                    <label for="phoneNo">Phone</label>
+                                    <input type="text" name="phoneNo" id="phoneNo" placeholder="Enter Phone Number">
+                                </div>
+                                <div class="checkout-form__single-field space-mb--30">
+                                    <label for="emailAddress">Email Address</label>
+                                    <input type="text" name="emailAddress" id="emailAddress" placeholder="Enter Email Address">
+                                </div>
+                                <div class="checkout-form__single-field space-mb--30">
+                                    <label for="shippingAddress">Shipping Address</label>
+                                    <div class="address-comtainer">
+                                        <input type="radio" id="html" name="fav_language" value="HTML">
+                                          <label for="html">address 1</label>
+                                    </div>
+                                   
+                                </div>
+                                
+                                <div class="your-order-area space-mb--30">
+                                    <h3>Your order</h3>
+                                    <div class="your-order-wrap gray-bg-4">
+                                        <div class="your-order-product-info">
+                                            <div class="your-order-top">
+                                                <ul>
+                                                    <li>Product</li>
+                                                    <li>Total</li>
+                                                </ul>
+                                            </div>
+                                            <div class="your-order-middle">
+                                                <ul>
+                                                    <li><span class="order-middle-left">Product Name  X  1</span> <span class="order-price">$329 </span></li>
+                                                    <li><span class="order-middle-left">Product Name  X  1</span> <span class="order-price">$329 </span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="your-order-bottom">
+                                                <ul>
+                                                    <li class="your-order-shipping">Shipping</li>
+                                                    <li>Free shipping</li>
+                                                </ul>
+                                            </div>
+                                            <div class="your-order-total">
+                                                <ul>
+                                                    <li class="order-total">Total</li>
+                                                    <li>$329</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="checkout-form__button">Place Order</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-      
-        <div class="product-content-safety border-bottom--thick space-pt--15 space-pb--15">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h4><img src="../assets/img/icons/security.svg" class="injectable" alt=""> Secure Payment Method.</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-        <!-- product content description -->
-        <div class="product-content-description space-pt--25 space-pb--25">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h4 class="space-mb--5">Specification</h4>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium, totam
-                            rem aperiam, eaque ipsa quae ab illo inventore veritatis
-                            et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- shop product button -->
-        <div class="shop-product-button">
-            <button class="cart">ADD TO CART</button>
-            <button class="buy">BUY NOW</button>
-        </div>
-        <!--====================  End of product content  ====================-->
+        <!--====================  End of checkout body  ====================-->
         <!--====================  footer area ====================-->
         <footer>
             <div class="footer-nav-wrapper">
@@ -218,7 +219,7 @@
                         <span>Home</span>
                     </div>
                 </a>
-                
+              
                 <a href="cart.html" class="footer-nav-single">
                     <div class="menu-wrapper">
                         <img src="../assets/img/icons/cart.svg" class="injectable" alt="">
@@ -251,17 +252,10 @@
     <script src="../assets/js/plugins/slick.min.js"></script>
     <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from above) -->
     <!--
-  <script src="assets/js/plugins/plugins.min.js"></script>
+  <script src="../assets/js/plugins/plugins.min.js"></script>
 -->
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
-    <!-- load post -->
-    <script src="../assets/js/onclickload.js"></script>
-    <!-- pop up -->
-    <!-- <script src="../assets/js/CartpopUp.js"></script> -->
-    <!-- dropdown -->
-   <script src="../assets/js/dropdown.js"></script>
-   <!-- but now popup -->
-   <!-- <script src="../assets/js/buypopup.js"></script> -->
+    <script src="../assets/js/dropdown.js"></script>
 </body>
 </html>
