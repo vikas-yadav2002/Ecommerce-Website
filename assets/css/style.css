@@ -5186,7 +5186,7 @@ padding-left: 10px;
 }
 
 #selectShop:hover:not(:disabled) {
-  background-color: #45a049;
+  background-color: #722adf;
 }
 .dropdown-icon {
   float: right;
