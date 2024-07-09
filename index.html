@@ -175,6 +175,25 @@
                 </div>
             </div>
         </div>
+        <!-- adderess modal -->
+        <div id="addressModal" class="address-modal">
+            <div class="address-modal-content">
+              <span class="close-modal">&times;</span>
+              <h2>Select a Shop Address</h2>
+              <div class="shop-dropdown">
+                <button class="dropbtn" id="dropdownBtn">
+                  Select an address
+                  <span class="dropdown-icon">&#9662;</span>
+                </button>
+                <div class="dropdown-content" id="addressDropdown">
+                  <a href="#" data-address="123 Main St, Anytown, USA 12345">Shop 1: 123 Main St, Anytown, USA 12345</a>
+                  <a href="#" data-address="456 Oak Ave, Other City, USA 67890">Shop 2: 456 Oak Ave, Other City, USA 67890</a>
+                  <a href="#" data-address="789 Pine Rd, Another Place, USA 13579">Shop 3: 789 Pine Rd, Another Place, USA 13579</a>
+                </div>
+              </div>
+              <button id="selectShop" disabled>Select Shop</button>
+            </div>
+          </div>
         <!--====================  End of hero slider  ====================-->
         <!--====================  category slider ====================-->
         <div class="category-slider-area bg-color--grey space-pb--25 space-mb--25">
@@ -607,4 +626,6 @@
    <script src="./assets/js/dropdown.js"></script>
    <!-- but now popup -->
    <script src="./assets/js/buypopup.js"></script>
+   <!-- modal -->
+   <script src="./assets/js/modal.js"></script>
 </html>
