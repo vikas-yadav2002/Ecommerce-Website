@@ -5102,13 +5102,13 @@ padding-left: 10px;
 }
 
 .address-modal-content {
-  background-color: #fefefe;
+  background-color: #EEEEFF;
   margin: 15% auto;
-  padding: 20px;
+  padding: 60px 30px;
   border: 1px solid #888;
   width: 90%;
   max-width: 500px;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .close-modal {
@@ -5142,6 +5142,7 @@ padding-left: 10px;
   cursor: pointer;
   width: 100%;
   text-align: left;
+  border : 2px solid black
 }
 
 .dropdown-content {
@@ -5205,3 +5206,5 @@ padding-left: 10px;
   justify-content: space-between;
   align-items: center;
 }
+
+
