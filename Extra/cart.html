@@ -48,7 +48,7 @@
                         <div class="col-auto">
                             <!-- header logo -->
                             <div class="header-logo">
-                                <a href="index2.html">
+                                <a href="index.html">
                                     <img src="../assets/img/logo.png" class="img-fluid" alt="">
                                 </a>
                             </div>
@@ -105,105 +105,127 @@
         </div>
         <!--====================  End of mobile menu overlay  ====================-->
         <!--====================  breadcrumb area ====================-->
-        <div class="breadcrumb-area newClass bg-color--grey space-y--15">
+        <div class="breadcrumb-area cartbyme bg-color--grey space-y--15">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-3">
                         <a href="index.html" class="back-link"> <i class="fa fa-angle-left"></i> Back</a>
                     </div>
                     <div class="col-6">
-                        <h1 class="page-title text-center">Checkout</h1>
+                        <h1 class="page-title text-center">Cart</h1>
                     </div>
                 </div>
             </div>
         </div>
         <!--====================  End of breadcrumb area  ====================-->
-        <!--====================  checkout body ====================-->
-        <div class="checkout-body space-mt--30">
+        <!--====================  cart product area ====================-->
+        <div class="cart-product-area">
+            <div class="cart-product border-bottom--medium">
+                
+                <div class="cart-product__content">
+                    <h3 class="title"><a href="shop-product.html">Leather Bag</a></h3>
+                    <span class="category">Bag</span>
+                    <div class="price">
+                        <span class="main-price">$460</span>
+                        <!-- <span class="discounted-price">$320</span> -->
+                    </div>
+                </div>
+                <div class="cart-product__counter">
+                    <div class="cart-plus-minus">
+                        <input class="cart-plus-minus-box" type="text" name="qtybutton" disabled value="1">
+                    </div>
+                </div>
+            </div>
+            <div class="cart-product border-bottom--medium">
+                
+                <div class="cart-product__content">
+                    <h3 class="title"><a href="shop-product.html">Lipstick</a></h3>
+                    <span class="category">Cosmetics</span>
+                    <div class="price">
+                        <span class="main-price">$4</span>
+                        <!-- <span class="discounted-price">$3</span> -->
+                    </div>
+                </div>
+                <div class="cart-product__counter">
+                    <div class="cart-plus-minus">
+                        <input class="cart-plus-minus-box" type="text" name="qtybutton" disabled value="1">
+                    </div>
+                </div>
+            </div>
+            <div class="cart-product border-bottom--medium">
+               
+                <div class="cart-product__content">
+                    <h3 class="title"><a href="shop-product.html">Sports shoe</a></h3>
+                    <span class="category">Show</span>
+                    <div class="price">
+                        <span class="main-price">$60</span>
+                        <!-- <span class="discounted-price">$20</span> -->
+                    </div>
+                </div>
+                <div class="cart-product__counter">
+                    <div class="cart-plus-minus">
+                        <input class="cart-plus-minus-box" type="text" name="qtybutton" disabled value="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====================  End of cart product area  ====================-->
+        <!-- <div class="discount-code-wrapper space-mt--20">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <!-- checkout form -->
-                        <div class="checkout-form">
+                        <div class="title-wrap">
+                            <h4 class="cart-bottom-title">Use Coupon Code</h4>
+                        </div>
+                        <div class="discount-code">
+                            <p>Enter your coupon code if you have one.</p>
                             <form>
-                                <div class="checkout-form__single-field space-mb--30">
-                                    <label for="fullName">Full Name</label>
-                                    <input type="text" name="fullName" id="fullName" placeholder="Enter Full Name">
-                                </div>
-                                
-                                <div class="checkout-form__single-field space-mb--30">
-                                    <label for="phoneNo">Phone</label>
-                                    <input type="text" name="phoneNo" id="phoneNo" placeholder="Enter Phone Number">
-                                </div>
-                                <div class="checkout-form__single-field space-mb--30">
-                                    <label for="emailAddress">Email Address</label>
-                                    <input type="text" name="emailAddress" id="emailAddress" placeholder="Enter Email Address">
-                                </div>
-                                <div class="checkout-form__single-field space-mb--30">
-                                    <label for="shippingAddress">Shipping Address</label>
-                                    <div class="address-comtainer">
-                                        <input type="radio" id="html" name="fav_language" value="HTML">
-                                          <label for="html">address 1</label>
-                                    </div>
-                                   
-                                </div>
-                                
-                                <div class="your-order-area space-mb--30">
-                                    <h3>Your order</h3>
-                                    <div class="your-order-wrap gray-bg-4">
-                                        <div class="your-order-product-info">
-                                            <div class="your-order-top">
-                                                <ul>
-                                                    <li>Product</li>
-                                                    <li>Total</li>
-                                                </ul>
-                                            </div>
-                                            <div class="your-order-middle">
-                                                <ul>
-                                                    <li><span class="order-middle-left">Product Name  X  1</span> <span class="order-price">$329 </span></li>
-                                                    <li><span class="order-middle-left">Product Name  X  1</span> <span class="order-price">$329 </span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="your-order-bottom">
-                                                <ul>
-                                                    <li class="your-order-shipping">Shipping</li>
-                                                    <li>Free shipping</li>
-                                                </ul>
-                                            </div>
-                                            <div class="your-order-total">
-                                                <ul>
-                                                    <li class="order-total">Total</li>
-                                                    <li>$329</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="checkout-form__button">Place Order</button>
+                                <input type="text" required="" name="name">
+                                <button class="cart-btn-2" type="submit">Apply Coupon</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="grand-total space-mt--20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="title-wrap">
+                            <h4 class="cart-bottom-title">Cart Total</h4>
+                        </div>
+                        <h5>Total products <span>$260.00</span></h5>
+                        <!-- <div class="total-shipping">
+                            <h5>Total shipping</h5>
+                            <ul>
+                                <li><input type="radio" name="shippingInput"> Standard <span>$20.00</span></li>
+                                <li><input type="radio" name="shippingInput"> Express <span>$30.00</span></li>
+                            </ul>
+                        </div> -->
+                        <h4 class="grand-total-title">Grand Total <span>$260.00</span></h4>
+                        <a href="checkout.html">Proceed to Checkout</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--====================  End of checkout body  ====================-->
         <!--====================  footer area ====================-->
         <footer>
             <div class="footer-nav-wrapper">
-                <a href="./index2.html" class="footer-nav-single">
+                <a href="index.html" class="footer-nav-single">
                     <div class="menu-wrapper">
                         <img src="../assets/img/icons/home.svg" class="injectable" alt="">
                         <span>Home</span>
                     </div>
                 </a>
-              
-                <a href="./cart.html" class="footer-nav-single">
+               
+                <a href="cart.html" class="footer-nav-single">
                     <div class="menu-wrapper">
                         <img src="../assets/img/icons/cart.svg" class="injectable" alt="">
                         <span>Cart</span>
                     </div>
                 </a>
-                <a href="./profile.html" class="footer-nav-single">
+                <a href="profile.html" class="footer-nav-single">
                     <div class="menu-wrapper">
                         <img src="../assets/img/icons/profile.svg" class="injectable" alt="">
                         <span>Profile</span>
@@ -233,6 +255,6 @@
 -->
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/dropdown.js"></script>
+    <script src="./../assets/js/dropdown.js"></script>
 </body>
 </html>
