@@ -93,3 +93,53 @@
   .star-rating input[type="radio"]:checked ~ label {
     color: #7415CB;
   }
+
+  .button-banner{
+    padding: 0px 60px;
+    /* width: 80vw; */
+    /* margin: 0 auto; */
+    background-color: #F7F8F8;
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 10px; */
+  }
+  .button-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 15vh;
+    width: 90vw;
+    align-items: center;
+    background-color: white;
+
+  }
+  .button-container .button{
+    border: none;
+    
+  }
+
+
+  .button-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 15vh;
+    width: 90vw;
+    align-items: center;
+    background-image: linear-gradient(to right, #7415CB, purple);
+}
+
+
+.button-container .text{
+    color: white;
+
+    font-size: 1.5rem;
+}
+.button-container .button button {
+    padding: 5px 40px;
+    border: none;
+    border-radius: 21px;
+
+    font-size: 1.2rem;
+}
+.button-container .button button:hover{
+    scale: 1.2;
+}
